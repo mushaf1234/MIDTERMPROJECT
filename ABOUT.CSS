@@ -3,20 +3,14 @@
     padding: 0px;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    
-  }
+    margin: 0;}
 
 
   body{
     background: url(./istockphoto-1472189897-1024x1024.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-/* resp */
-flex-wrap: wrap;
-justify-content: center;
-align-items: center;
-padding: 40px 16px;
+
 
 
 }
