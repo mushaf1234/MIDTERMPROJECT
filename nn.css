@@ -1,0 +1,259 @@
+* {
+
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+nav a {
+    position: relative;
+    font-size: 30px;
+    text-decoration: none;
+    color: red;
+    padding: 6px 20px;
+    transition: .5s;
+}
+.header{
+    width: 100%;
+    display: flex;
+    padding: 10px 0px;
+    position: fixed;
+    top: 0;
+    z-index: 99999;
+    background-color:whitesmoke;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+#nav {
+    width: 75%;
+    display: flex;
+    justify-content: center;
+}
+#nav a:hover{
+    border: 1px solid  silver;
+border-bottom: 5px;
+box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+border-radius: 25px;
+}
+
+/* search */
+/* SEARCH  */
+
+.box {
+    width: 25%;
+}
+.box:hover input {
+    width: 40%;
+}
+
+.box input {
+    width: 38px;
+    outline: none;
+    border: none;
+    font-weight: 400;
+    transition: 0.4s;
+    background-color: transparent;
+}
+
+.box a .fa-solid {
+    color: #1daf;
+    font-size: 15px;
+    margin-right: 200px;
+}
+
+/* text ani */
+
+.CONT {
+    margin-right: auto;
+    display: flex;
+    margin-bottom: auto;
+    margin-top: 150px;
+    margin-left: auto;
+}
+
+.txt {
+
+    font-size: 4rem;
+    letter-spacing: 2px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-left: 5px solid;
+    color: rgb(12, 20, 15 .9);
+    width: 100%;
+    overflow: hidden;
+    animation: typing 2s, steps(12) .4s step-end infinite alternate;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+@keyframes cursor {
+    50% {
+        background-color: transparent
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+}
+
+/* img ani */
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.cardcontainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+}
+
+.card {
+    height: 500px;
+    margin: 50px;
+    box-shadow: 5px 5px 20px black;
+    justify-items: baseline;
+
+    overflow: hidden;
+}
+
+img {
+    height: 500px;
+    width: 350px;
+    border-radius: 3px;
+    transition: .5s;
+
+}
+
+.intro {
+    height: 1px;
+    width: 350px;
+    padding: 6px;
+    box-sizing: border-box;
+    position: absolute;
+    
+    flex-wrap: wrap;
+    flex-direction: row;
+    background: rgb(27, 27, 27 .5);
+    color: white;
+    tran
+}
+
+h1 {
+    margin: 8px;
+    font-size: 40px;
+}
+
+p {
+    font-size: 20px;
+    margin: 4px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+span {
+    font-weight: bold;
+}
+
+.card:hover {
+    cursor: pointer;
+}
+
+
+
+.card:hover p {
+    opacity: 1;
+    visibility: visible;
+}
+
+.card:hover img {
+    transform: scale(1.1) rotate(-3deg);
+}
+
+/* Media Queries */
+
+/* Mobile Layout (320px - 767px) */
+@media only screen and (max-width: 767px) {
+    nav a {
+      font-size: 20px;
+      padding: 4px 10px;
+    }
+    .header {
+      padding: 5px 0px;
+    }
+    #nav {
+      width: 100%;
+    }
+    .box {
+      width: 50%;
+    }
+    .CONT {
+      margin-top: 100px;
+    }
+    .txt {
+      font-size: 2rem;
+    }
+    .card {
+      height: 300px;
+      margin: 20px;
+    }
+    img {
+      height: 300px;
+      width: 200px;
+    }
+    .intro {
+      width: 200px;
+    }
+    h1 {
+      font-size: 30px;
+    }
+    p {
+      font-size: 15px;
+    }
+  }
+  
+  /* Tablet Layout (768px - 1023px) */
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    nav a {
+      font-size: 25px;
+      padding: 5px 15px;
+    }
+    .header {
+      padding: 7px 0px;
+    }
+    #nav {
+      width: 90%;
+    }
+    .box {
+      width: 30%;
+    }
+    .CONT {
+      margin-top: 120px;
+    }
+    .txt {
+      font-size: 3rem;
+    }
+    .card {
+      height: 400px;
+      margin: 30px;
+    }
+    img {
+      height: 400px;
+      width: 250px;
+    }
+    .intro {
+      width: 250px;
+    }
+    h1 {
+        font-size: 35px;
+      }
+      p {
+        font-size: 18px;
+      }
+    }
+      
