@@ -6,15 +6,8 @@
     margin: 0;
     
   }
-  // <uniquifier>: Use a unique and descriptive class name
-// <weight>: Use a value from 400 to 900
 
-.playfair-display-uniquifier {
-  font-family: "Playfair Display", serif;
-  font-optical-sizing: auto;
-  font-weight: weight;
-  font-style: normal;
-}
+
   body{
     background: url(./istockphoto-1472189897-1024x1024.jpg);
     background-repeat: no-repeat;
