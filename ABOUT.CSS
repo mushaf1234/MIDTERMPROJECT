@@ -1,0 +1,213 @@
+* {
+
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    
+  }
+  // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 400 to 900
+
+.playfair-display-uniquifier {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+  body{
+    background: url(./istockphoto-1472189897-1024x1024.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+/* resp */
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+padding: 40px 16px;
+
+
+}
+  nav a {
+  
+    position: relative;
+    font-size: 30px;
+    text-decoration: none;
+    color: red;
+    padding: 6px 20px;
+    transition: .5s;
+  }
+  .header{
+    width: 100%;
+    display: flex;
+    padding: 10px 0px;
+    position: fixed;
+    top: 0;
+    z-index: 99999;
+    background-color:whitesmoke;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  }
+  
+  #nav {
+    width: 75%;
+    display: flex;
+  
+    justify-content: center;
+  }
+  #nav a:hover{
+  
+    border: 1px solid  silver;
+  border-bottom: 5px;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  border-radius: 25px;
+  }
+  
+  /* search */
+  /* SEARCH  */
+  
+  .box {
+    width: 25%;
+  }
+  .box:hover input {
+    width: 40%;
+  }
+  
+  .box input {
+    width: 38px;
+    outline: none;
+    border: none;
+    font-weight: 400;
+    transition: 0.4s;
+    background-color: transparent;
+  }
+  
+  .box a .fa-solid {
+    color: #1daf;
+    font-size: 15px;
+    margin-right: 200px;
+  }
+  h1{
+    color:whitesmoke;
+    font-weight: 490;
+    margin-left:-20px ;
+
+  }
+  li{
+    text-align: center;
+    color:skyblue;
+    font-weight: 150;
+    font-size: 35px;
+    font-family:'Courier New', Courier, monospace ;  }
+    .content-HEAD{
+      margin-top: -71px;
+      text-align: center;
+      font-size: 35px;
+      outline:invert;
+    font-weight: 500;
+    }
+    .vision{
+      background-image: url(./vision.jpg);
+      position: relative;
+      background-repeat: no-repeat;
+box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+background-size: cover;
+    }
+    li:hover{
+        transition: 0.9s;
+        color: white;
+        background-color: black;
+        transform: rotateY(1.5deg) rotateX(2.5deg);}
+        .Mision{
+          background-image: url(./uor\ miision.jpg) ;
+            position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+        }
+        .q{
+            font-size: 35px;
+            font-family: 'Courier New', Courier, monospace;
+        color:#1D2287;
+      font-weight: 160;  
+      }
+        .jojo{
+margin: 0PX 101.7PX;
+mix-blend-mode:screen;
+        
+}
+        .jojo:hover{
+mix-blend-mode: normal;
+        }
+.gojo{
+    margin: 0px 180px;
+mix-blend-mode: exclusion;
+}
+.gojo:hover{
+mix-blend-mode: normal;
+}
+
+
+
+/* Media Queries for Responsive Design */
+
+/* Tablet Styles (screen width <= 768px) */
+@media (max-width: 768px) {
+  .header {
+    padding: 5px 0px;
+  }
+  nav a {
+    font-size: 24px;
+    padding: 4px 15px;
+  }
+  #nav {
+    width: 90%;
+  }
+  .box {
+    width: 40%;
+  }
+  .box:hover input {
+    width: 50%;
+  }
+  .box a .fa-solid {
+    margin-right: 10px;
+  }
+  li {
+    font-size: 28px;
+  }
+  .vision, .Mision {
+    background-size: contain;
+  }
+}
+
+/* Mobile Styles (screen width <= 480px) */
+@media (max-width: 480px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 5px;
+  }
+  nav a {
+    font-size: 18px;
+    padding: 3px 10px;
+  }
+  #nav {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .box {
+    width: 60%;
+  }
+  .box:hover input {
+    width: 60%;
+  }
+  .box a .fa-solid {
+    margin-right: 5px;
+  }
+  li {
+    font-size: 20px;
+  }
+  .vision, .Mision {
+    background-size: cover;
+  }
+}
