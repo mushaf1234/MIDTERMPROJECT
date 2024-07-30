@@ -1,0 +1,289 @@
+/* General Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    background-image: url(./istockphoto-643517702-1024x1024\ \(1\).jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+nav {
+    width: 100%;
+    padding: 10px;
+
+}
+
+nav a {
+    position: relative;
+    font-size: 25px;
+    color: #000;
+    text-decoration: none;
+    color: cornflowerblue;
+    padding: 6px 20px;
+    transition: 0.5s;
+    border-top-right-radius: 80px;
+    border-top-left-radius: 80px;
+
+}
+
+nav a:hover {
+    color: blue;
+}
+
+nav a span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border-bottom: 2px solid blue;
+    border-radius: 15px;
+    transform: scale(0) translateY(50px);
+    transition: 0.2s;
+}
+
+nav a:hover span {
+    transform: scale(1) translateY(0);
+}
+
+/* Search Box Styles */
+
+
+/* Search Box Styles */
+.box {
+    height: 30px;
+    display: flex;
+    cursor: pointer;
+    padding: 7px 10px;
+    background: #fff;
+    border-radius: 30px;
+    align-items: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    margin-left: auto;
+    position: relative;
+margin-top: 20px;
+}
+
+.box:hover input {
+    width: 700px;
+}
+
+.box input {
+    width: 0;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    transition: 0.4s;
+    background-color: transparent;
+}
+
+.box a .fa-solid {
+    color: #1daf;
+    font-size: 18px;
+}
+
+
+.box:hover input {
+    width: 300px;
+}
+
+.box input {
+    width: 0px;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    transition: 0.4s;
+    background-color: transparent;
+
+}
+
+.box a .fa-solid {
+    color: #1daf;
+    font-size: 18px;
+}
+
+/* Container and Text Styles */
+.container {
+    text-align: center;
+    position: relative;
+    margin-top: 50px;
+}
+
+.container span {
+    text-transform: uppercase;
+    display: block;
+}
+
+.text1, .text2, .text3 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.text1 {
+    color: #333;
+    letter-spacing: 3px;
+    animation: text 5s 1;
+}
+
+.text2 {
+    color: indigo;
+    font-weight: 800;
+}
+
+.text3 {
+    color: indigo;
+    font-weight: 800;
+    letter-spacing: 6px;
+}
+
+@keyframes text {
+    0% {
+        color: #000;
+        margin-bottom: -40px;
+    }
+    50% {
+        color: #000;
+        margin-bottom: 40px;
+    }
+    85% {
+        color: #000;
+        margin-bottom: -20px;
+    }
+    100% {
+        color: #000;
+        margin-bottom: -8px;
+    }
+}
+
+.text1:hover {
+    color: yellow;
+    transition: 0.6s;
+}
+
+.text2:hover {
+    color: yellow;
+    transition: 0.6s;
+}
+
+.text3:hover {
+    transition: 0.6s;
+    color: yellow;
+}
+
+/* Intro Section Styles */
+.introContainer {
+    text-align: center;
+    margin-top: 50px;
+    transition: 15s;
+    }
+.introContainer:hover{
+    transition: 1.2s;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    background:linear-gradient(yellow,red,yellow,yellow);
+}
+.intro h1 {
+    margin-bottom: 20px;
+}
+.intro h3 {
+    color: #000;
+    margin-bottom: 15px;
+}
+
+.intro h3 img {
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+.intro h3 mark {
+    background: transparent;
+    color: red;
+}
+
+.foot{
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    width: 84.3rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+}
+.FONT{
+    letter-spacing: 2;
+    text-transform: uppercase;
+    font-family:Arial, Helvetica, sans-serif;
+font-weight: 300;
+opacity: 0.4;
+
+}
+
+/* Media Queries for Tablets and Mobile Devices */
+
+/* Tablet Styles (screen width <= 768px) */
+@media (max-width: 768px) {
+    nav a {
+        font-size: 16px;
+        padding: 4px 15px;
+    }
+
+    .container {
+        margin-top: 30px;
+    }
+
+    .text1, .text2, .text3 {
+        font-size: 30px;
+    }
+
+    .box {
+        margin-left: 10px;
+        padding: 8px 15px;
+    }
+
+    .box:hover input {
+        width: 180px;
+    }
+.foot{
+width: 100%;
+}
+}
+
+/* Mobile Styles (screen width <= 480px) */
+@media (max-width: 480px) {
+    nav {
+        padding: 10px 5px;
+    }
+.foot{
+    width: 100%;
+}
+    nav a {
+        font-size: 14px;
+        padding: 4px 10px;
+    }
+
+    .container {
+        margin-top: 20px;
+    }
+
+    .text1, .text2, .text3 {
+        font-size: 24px;
+    }
+
+    .box {
+        margin-left: 5px;
+        padding: 5px 10px;
+    }
+
+    .box:hover input {
+        width: 150px;
+    }
+}
