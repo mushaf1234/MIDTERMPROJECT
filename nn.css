@@ -240,7 +240,7 @@ span {
     }
     .card {
       height: 400px;
-      margin: 30px;
+      margin: 40px;
     }
     img {
       height: 400px;
@@ -250,7 +250,7 @@ span {
       width: 250px;
     }
     h1 {
-        font-size: 35px;
+        font-size: 22px;
       }
       p {
         font-size: 18px;
